@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="plugin/aos.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700&display=swap&subset=vietnamese" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amiri:400,400i,700,700i&display=swap" rel="stylesheet">
@@ -53,180 +54,183 @@
             <div class="title">
               <hr>
               <ul id="myContainer">
-                <li><a href="">Tất cả</a></li>
-                <li><a href="">Asus</a></li>
-                <li><a href="">Acer</a></li>
-                <li><a href="">Dell</a></li>
-                <li><a href="">HP</a></li>
-                <li><a href="">Lenovo</a></li>
+                <li><button class="btn active" onclick="filterSelection('all')">Tất cả</button></li>
+                <li><button class="btn" onclick="filterSelection('asus')">Asus</button></li>
+                <li><button class="btn" onclick="filterSelection('acer')">Acer</button></li>
+                <li><button class="btn" onclick="filterSelection('dell')">Dell</button></li>
+                <li><button class="btn" onclick="filterSelection('hp')">HP</button></li>
+                <li><button class="btn" onclick="filterSelection('lenovo')">Lenovo</button></li>
               </ul>
+              <div class="sp">
+                <div class="_1sp asus" data-aos="fade-up">
+                    <div class="box-img-text">
+                        <a href="">
+                            <img src="img/SanPham/asus1.jfif" alt="">
+                            <span>Lenovo Ideapad 330-15IKB/Core I3 7020U/4GB/256GSSD</span>
+                        </a>
+                        <div class="price">
+                            <p class="real_price">9.090.000đ</p>
+                            <div class="discount"><del>9.999.999đ</del></div>
+                        </div>
+                        <div class="gray">
+                            <img src="img/shopnow.png" alt="">
+                            <div class="back_add"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="_1sp asus" data-aos="fade-up">
+                    <div class="box-img-text">
+                        <a href="">
+                            <img src="img/SanPham/asus2.jfif" alt="">
+                            <span>Lenovo Ideapad 330-15IKB/Core I3 7020U/4GB/256GSSD</span>
+                        </a>
+                        <div class="price">
+                            <p class="real_price">9.090.000đ</p>
+                            <div class="discount"><del>9.999.999đ</del></div>
+                        </div>
+                        <div class="gray">
+                            <img src="img/shopnow.png" alt="">
+                            <div class="back_add"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="_1sp dell" data-aos="fade-up">
+                    <div class="box-img-text">
+                        <a href="">
+                            <img src="img/SanPham/dell1.jfif" alt="">
+                            <span>Lenovo Ideapad 330-15IKB/Core I3 7020U/4GB/256GSSD</span>
+                        </a>
+                        <div class="price">
+                            <p class="real_price">9.090.000đ</p>
+                            <div class="discount"><del>9.999.999đ</del></div>
+                        </div>
+                        <div class="gray">
+                            <img src="img/shopnow.png" alt="">
+                            <div class="back_add"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="_1sp dell" data-aos="fade-up">
+                    <div class="box-img-text">
+                        <a href="">
+                            <img src="img/SanPham/acer1.jfif" alt="">
+                            <span>Lenovo Ideapad 330-15IKB/Core I3 7020U/4GB/256GSSD</span>
+                        </a>
+                        <div class="price">
+                            <p class="real_price">9.090.000đ</p>
+                            <div class="discount"><del>9.999.999đ</del></div>
+                        </div>
+                        <div class="gray">
+                            <img src="img/shopnow.png" alt="">
+                            <div class="back_add"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="_1sp acer" data-aos="fade-up">
+                    <div class="box-img-text">
+                        <a href="">
+                            <img src="img/SanPham/hp2.jfif" alt="">
+                            <span>Lenovo Ideapad 330-15IKB/Core I3 7020U/4GB/256GSSD</span>
+                        </a>
+                        <div class="price">
+                            <p class="real_price">9.090.000đ</p>
+                            <div class="discount"><del>9.999.999đ</del></div>
+                        </div>
+                        <div class="gray">
+                            <img src="img/shopnow.png" alt="">
+                            <div class="back_add"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="_1sp acer" data-aos="fade-up">
+                    <div class="box-img-text">
+                        <a href="">
+                            <img src="img/SanPham/hp1.jpg" alt="">
+                            <span>Lenovo Ideapad 330-15IKB/Core I3 7020U/4GB/256GSSD</span>
+                        </a>
+                        <div class="price">
+                            <p class="real_price">9.090.000đ</p>
+                            <div class="discount"><del>9.999.999đ</del></div>
+                        </div>
+                        <div class="gray">
+                            <img src="img/shopnow.png" alt="">
+                            <div class="back_add"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="_1sp hp" data-aos="fade-up">
+                    <div class="box-img-text">
+                        <a href="">
+                            <img src="img/SanPham/hp1.jpg" alt="">
+                            <span>Lenovo Ideapad 330-15IKB/Core I3 7020U/4GB/256GSSD</span>
+                        </a>
+                        <div class="price">
+                            <p class="real_price">9.090.000đ</p>
+                            <div class="discount"><del>9.999.999đ</del></div>
+                        </div>
+                        <div class="gray">
+                            <img src="img/shopnow.png" alt="">
+                            <div class="back_add"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="_1sp hp" data-aos="fade-up">
+                    <div class="box-img-text">
+                        <a href="">
+                            <img src="img/SanPham/hp1.jpg" alt="">
+                            <span>Lenovo Ideapad 330-15IKB/Core I3 7020U/4GB/256GSSD</span>
+                        </a>
+                        <div class="price">
+                            <p class="real_price">9.090.000đ</p>
+                            <div class="discount"><del>9.999.999đ</del></div>
+                        </div>
+                        <div class="gray">
+                            <img src="img/shopnow.png" alt="">
+                            <div class="back_add"></div>
+                        </div>
+                    </div>
+                </div>
+              </div>
             </div>
-            <div class="sp">
-                <div class="_1sp asus">
-                      <a href="">
-                          <img src="img/SanPham/asus1.jfif" alt="">
-                          <span>Lenovo Ideapad 330-15IKB/Core I3 7020U/4GB/256GSSD</span>
-                      </a>
-                    
-                    <div class="price">
-                        <p class="real_price">9.090.000đ</p>
-                        <div class="discount"><del>9.999.999đ</del></div>
-                    </div>
-                    <div class="gray">
-                        <img src="img/shopnow.png" alt="">
-                        <div class="back_add"></div>
-                    </div>
-                </div>
-                <div class="_1sp asus">
-                    <a href="">
-                        <img src="img/SanPham/asus2.jfif" alt="">
-                        <span>Lenovo Ideapad 330-15IKB/Core I3 7020U/4GB/256GSSD</span>
-                    </a>
-                    <div class="price">
-                        <p class="real_price">9.090.000đ</p>
-                        <div class="discount"><del>9.999.999đ</del></div>
-                    </div>
-                    <div class="gray">
-                        <img src="img/shopnow.png" alt="">
-                        <div class="back_add"></div>
-                    </div>
-                </div>
-                <div class="_1sp">
-                    <a href="">
-                        <img src="img/SanPham/dell1.jfif" alt="">
-                        <span>Lenovo Ideapad 330-15IKB/Core I3 7020U/4GB/256GSSD</span>
-                    </a>
-                    <div class="price">
-                        <p class="real_price">9.090.000đ</p>
-                        <div class="discount"><del>9.999.999đ</del></div>
-                    </div>
-                    <div class="gray">
-                        <img src="img/shopnow.png" alt="">
-                        <div class="back_add"></div>
-                    </div>
-                </div>
-                <div class="_1sp">
-                    <a href="">
-                        <img src="img/SanPham/acer1.jfif" alt="">
-                        <span>Lenovo Ideapad 330-15IKB/Core I3 7020U/4GB/256GSSD</span>
-                    </a>
-                    <div class="price">
-                        <p class="real_price">9.090.000đ</p>
-                        <div class="discount"><del>9.999.999đ</del></div>
-                    </div>
-                    <div class="gray">
-                        <img src="img/shopnow.png" alt="">
-                        <div class="back_add"></div>
-                    </div>
-                </div>
-                <div class="_1sp load">
-                    <a href="">
-                        <img src="img/SanPham/hp2.jfif" alt="">
-                        <span>Lenovo Ideapad 330-15IKB/Core I3 7020U/4GB/256GSSD</span>
-                    </a>
-                    <div class="price">
-                        <p class="real_price">9.090.000đ</p>
-                        <div class="discount"><del>9.999.999đ</del></div>
-                    </div>
-                    <div class="gray">
-                        <img src="img/shopnow.png" alt="">
-                        <div class="back_add"></div>
-                    </div>
-                </div>
-                <div class="_1sp hp">
-                    <a href="">
-                        <img src="img/SanPham/hp1.jpg" alt="">
-                        <span>Lenovo Ideapad 330-15IKB/Core I3 7020U/4GB/256GSSD</span>
-                    </a>
-                    <div class="price">
-                        <p class="real_price">9.090.000đ</p>
-                        <div class="discount"><del>9.999.999đ</del></div>
-                    </div>
-                    <div class="gray">
-                        <img src="img/shopnow.png" alt="">
-                        <div class="back_add"></div>
-                    </div>
-                </div>
-                <div class="_1sp hp">
-                    <a href="">
-                        <img src="img/SanPham/hp1.jpg" alt="">
-                        <span>Lenovo Ideapad 330-15IKB/Core I3 7020U/4GB/256GSSD</span>
-                    </a>
-                    <div class="price">
-                        <p class="real_price">9.090.000đ</p>
-                        <div class="discount"><del>9.999.999đ</del></div>
-                    </div>
-                    <div class="gray">
-                        <img src="img/shopnow.png" alt="">
-                        <div class="back_add"></div>
-                    </div>
-                </div>
-                <div class="_1sp hp">
-                    <a href="">
-                        <img src="img/SanPham/hp1.jpg" alt="">
-                        <span>Lenovo Ideapad 330-15IKB/Core I3 7020U/4GB/256GSSD</span>
-                    </a>
-                    <div class="price">
-                        <p class="real_price">9.090.000đ</p>
-                        <div class="discount"><del>9.999.999đ</del></div>
-                    </div>
-                    <div class="gray">
-                        <img src="img/shopnow.png" alt="">
-                        <div class="back_add"></div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
         
     
     </div>
     <div class="footer">
-        <footer>Design by TAO</footer>
+        <footer>
+            <div>
+                <ul>
+                    <li>
+                        <h1>CHĂM SÓC KHÁCH HÀNG</h1>
+                        <hr>
+                        <p><a href="">Chính sách bảo hành</a></p>
+                        <p><a href="">Mua hàng trả góp</a></p>
+                        <a href="">Chính sách đổi trả</a></br>
+                    </li>
+                    <li>
+                        <h1>LIÊN HỆ NHANH</h1>
+                        <hr>
+                        <p>Mua hàng: 0123456789 (Miễn phí) </p>
+                        <p>Khiếu nại - Góp ý: 0987654321 (Miễn phí)</p>
+                        <p>Email: <a href="">abcxyz@gmail.com</a></p>
+                        
+                    </li>
+                    <li>
+                        <h1>TRỤ SỞ CHÍNH</h1>
+                        <hr>
+                        <p>18 Ung Văn Khiêm, Phường Đông Xuyên, Thành phố Long Xuyên, An Giang</p>
+                    </li>
+                </ul>
+            </div>
+        </footer>
     </div>
-    <!-- <script>
-        filterSelection("all")
-        function filterSelection(c) {
-          var x, i;
-          x = document.getElementsByClassName("_1sp");
-          if (c == "all") c = "";
-          for (i = 0; i < x.length; i++) {
-            w3RemoveClass(x[i], "show");
-            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-          }
-        }
-        
-        function w3AddClass(element, name) {
-          var i, arr1, arr2;
-          arr1 = element.className.split(" ");
-          arr2 = name.split(" ");
-          for (i = 0; i < arr2.length; i++) {
-            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-          }
-        }
-        
-        function w3RemoveClass(element, name) {
-          var i, arr1, arr2;
-          arr1 = element.className.split(" ");
-          arr2 = name.split(" ");
-          for (i = 0; i < arr2.length; i++) {
-            while (arr1.indexOf(arr2[i]) > -1) {
-              arr1.splice(arr1.indexOf(arr2[i]), 1);     
-            }
-          }
-          element.className = arr1.join(" ");
-        }
-        
-        
-        // Add active class to the current button (highlight it)
-        var btnContainer = document.getElementById("myContainer");
-        var btns = btnContainer.getElementsByClassName("link");
-        for (var i = 0; i < btns.length; i++) {
-          btns[i].addEventListener("click", function(){
-            var current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace(" active", "");
-            this.className += " active";
-          });
-        }
-        </script> -->
+    <script src="function.js"></script>
+    <script src="plugin/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
 </body>
 </html>

@@ -38,17 +38,18 @@
     top:0px;
     width: 100%;
 }
-.header ._3col ._1col{
+/* .header ._3col ._1col{
     width:33.33%;
-}
+} */
 .header ._3col ._1col.left{
     text-align: left;
+    width: 30%;
 }
 .header ._3col ._1col.left a{
-    font-size: 25px;
+    font-size: 150%;
     color:white;
     display:inline-block;
-    padding: 20px 30px;
+    padding: 5%;
 }
 .header ._3col ._1col.left a:hover{
     color: #0345bf;
@@ -57,20 +58,22 @@
 }
 .header ._3col ._1col.right{
     text-align: right;
+    width: 30%;
 }
 .header ._3col ._1col.right a{
     color: white;
-    font-size: 24px;
-    padding: 15px 15px;
+    font-size: 150%;
+    padding: 3%;
     display: inline-block;
 }
 .header ._3col ._1col.right {}
 .header ._3col ._1col.mid{
     text-align: center;
+    width: 40%;
 }
 .header ._3col ._1col.mid img{
-    height: 50px;
-    padding-top:20px;
+    width: 75%;
+    padding:3%;
 }
 
 .text_banner{
@@ -147,38 +150,58 @@
 }
 .content2 .white .title ul li{
     display: inline-block;
-    width: 8%;
+    padding-left: 3%;
+    padding-right: 3%;
     text-align: center;
     cursor: pointer;
     list-style: none;
 }
-.content2 .white .title ul li:hover a{
+.btn:hover{
     text-decoration: underline;
-    color:white
+    color: white;
 }
-.content2 .white .title ul li a{
+.btn{
     text-decoration: none;
-    display: inline;
+    display: inline ;
     font-family: var(--font2);
-    font-size: 20px;
+    font-size: 100%;
     padding: 0 10px;
-    color: rgb(212, 212, 212);
+    color: rgb(199, 199, 199);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
 }
+
+.btn.active{
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+
+
 .content2 .white .sp{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 5px;
     width:100%;
-    height:100%
+    height:100%;
+    justify-content: flex-start;
 }
-.content2 .white .sp ._1sp{
+._1sp{
     width: 320px;
     height:300px;
     font-family: var(--font4);
     position: relative;
     padding-bottom: 100px;
-    float: left; 
+    float: left;
+    display: none;
+}
+
+.show{
+    display: flex;
 }
 
 .content2 .white .sp ._1sp .gray{
@@ -190,6 +213,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .content2 .white .sp ._1sp .gray img{
     width:50%;
@@ -202,6 +226,7 @@
     top: 17%;
     transition: 0.4s;
     opacity: 1;
+    
 }
 .content2 .white .sp ._1sp .gray .back_add{
     border: 1px #80808045 solid;
@@ -253,6 +278,7 @@
 
 /* end css product */
 
+/* start css footer */
 .footer{
     background-color:black;
     float: none;
@@ -262,9 +288,49 @@
 }
 
 .footer footer{
-    color:white;    
+    color:white;   
 }
 
+.footer div{
+    margin-left: 15%;
+}
+
+.footer div ul{
+    width: 85%;
+}
+
+.footer div ul li{
+    display: inline-block;
+    width: 27%;
+    margin-right: 6%;
+    float: left;
+}
+
+.footer div ul li h1{
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.footer div ul li a{
+    color: white;
+    text-decoration: none;
+    padding-bottom: 3px;
+}
+
+.footer div ul li a:hover{
+    text-decoration: underline;
+}
+
+.footer div ul li hr{
+    border: 0.5px dotted rgb(150, 150, 150) ;
+}
+
+.footer div ul li p{
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+/* end css footer */
 
 /* .Load{
     transition: 0.4s;
@@ -278,8 +344,5 @@
 @-webkit-keyframes cdlen{
     form {transform: translateY(100px); opacity: 0;}
     to {transform: translateY(0); opacity: 1;}
-}
+}*/
 
-.show {
-    display: block;
-} */
