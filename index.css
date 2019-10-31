@@ -1,19 +1,16 @@
-    *{
+*{
     margin:0;
     padding:0
 }
 
 :root {
     --font1: 'Oswald', sans-serif;
-    --size1: 48px;
+    --size1: 35px;
     --lineheight1:59px;
-    
     --font2: 'Amiri', serif;
     --size2:14px;
     --color2:#666;
-
     --size3:22px;
-
     --font4: 'Arial',Helvetica,sans-serif;
 }
 
@@ -46,10 +43,10 @@
     width: 30%;
 }
 .header ._3col ._1col.left a{
-    font-size: 150%;
+    font-size: 37px;
     color:white;
     display:inline-block;
-    padding: 5%;
+    padding: 30px;
 }
 .header ._3col ._1col.left a:hover{
     color: #0345bf;
@@ -62,8 +59,8 @@
 }
 .header ._3col ._1col.right a{
     color: white;
-    font-size: 150%;
-    padding: 3%;
+    font-size: 35px;
+    padding: 15px;
     display: inline-block;
 }
 .header ._3col ._1col.right {}
@@ -72,7 +69,7 @@
     width: 40%;
 }
 .header ._3col ._1col.mid img{
-    width: 75%;
+    width: 80%;
     padding:3%;
 }
 
@@ -83,21 +80,47 @@
     top:30%;
 }
 .text_banner .content{
-    width:1170px;
+    width:100%;
     margin: auto;
 }
 .text_banner .content .small{
     font-size: 20px;
-    padding-bottom: 10px;;
-}
-.text_banner .content h1{
-    font-family: var(--font1);
-    font-size: var(--size1);
-    line-height: var(--lineheight1);
-    color: white;
-    width: 30%;
+    padding-bottom: 10px;
+    margin-left: 350px;
 }
 
+
+.text_banner .content h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    line-height: 59px;
+    color: white;
+    width: 20%;
+    margin-left: 350px;
+}
+
+@media(max-width: 768px){
+    .text_banner .content .small{
+        font-size:14px;
+        margin-left:65px;
+        
+    }
+    .text_banner .content h1{
+        font-size: 25px;
+        margin-left:65px;
+        line-height: 35px;
+        width:50%;
+    }
+    .header ._3col ._1col.right a {
+        font-size: 18px;
+        padding: 5px;
+
+    }
+    .header ._3col ._1col.left a {
+        font-size: 20px; 
+        padding: 10px;
+    }
+    }
 /* end css top */
 
 .content1{
@@ -124,7 +147,7 @@
 }
 .content1 .right p{
     line-height: 20px;
-    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 /* end content1 css */
@@ -283,8 +306,8 @@
     background-color:black;
     float: none;
     width: 100%;
-    padding:10px;
     position: absolute;
+    padding: 10px 0px 10px 0px;
 }
 
 .footer footer{
@@ -292,11 +315,11 @@
 }
 
 .footer div{
-    margin-left: 15%;
+    margin-left: 10%;
 }
 
 .footer div ul{
-    width: 85%;
+    width: 90%;
 }
 
 .footer div ul li{
