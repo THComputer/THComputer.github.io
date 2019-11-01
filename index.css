@@ -10,7 +10,7 @@
     --font2: 'Amiri', serif;
     --size2:14px;
     --color2:#666;
-    --size3:22px;
+    --size3: 29px;
     --font4: 'Arial',Helvetica,sans-serif;
 }
 
@@ -41,6 +41,41 @@
 .header ._3col ._1col.left{
     text-align: left;
     width: 30%;
+    position: relative;
+    height:20px;
+    line-height: 20px;
+}
+.header ._3col ._1col.left .vertical-menu{
+    position: absolute;
+    left:0px;
+    visibility: hidden; 
+    opacity:0;
+    transition: 0.6s;
+    width:250px;
+    background-color: rgb(158, 156, 156);
+}
+.header ._3col ._1col.left .vertical-menu ul li a{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 10px;
+    color:black;
+    border-bottom:1px solid rgb(190,190,190);
+    text-decoration: none;
+    font-size: 10px;
+}
+.header ._3col ._1col.left .vertical-menu ul li {
+    list-style: none;
+}
+.header ._3col ._1col.left .vertical-menu ul li a:hover{
+    background-color: white;
+}
+
+.header ._3col ._1col.left:hover .vertical-menu {
+    visibility: visible;
+    opacity: 1;
+    top:30px;
+    left:80px;
 }
 .header ._3col ._1col.left a{
     font-size: 37px;
@@ -49,9 +84,7 @@
     padding: 30px;
 }
 .header ._3col ._1col.left a:hover{
-    color: #0345bf;
-    padding-right: 20px;
-    padding-top: 10px;
+    color: rgb(158, 156, 156);
 }
 .header ._3col ._1col.right{
     text-align: right;
@@ -70,7 +103,7 @@
 }
 .header ._3col ._1col.mid img{
     width: 80%;
-    padding:3%;
+    padding:5px;
 }
 
 .text_banner{
@@ -99,57 +132,49 @@
     margin-left: 350px;
 }
 
-@media(max-width: 768px){
-    .text_banner .content .small{
-        font-size:14px;
-        margin-left:65px;
-        
-    }
-    .text_banner .content h1{
-        font-size: 25px;
-        margin-left:65px;
-        line-height: 35px;
-        width:50%;
-    }
-    .header ._3col ._1col.right a {
-        font-size: 18px;
-        padding: 5px;
 
-    }
-    .header ._3col ._1col.left a {
-        font-size: 20px; 
-        padding: 10px;
-    }
-    }
 /* end css top */
 
 .content1{
-    width:62%;
+    width: 70%;
     margin:auto;
     padding: 110px 0;
     display: flex;
     font-family:  var(--font2);
     size: var(--size2);
-    color:var(--color2)
+    color:var(--color2);
 }
 .content1 .left{
     width: 35%;
+    margin-left: 50px;
 }
-.content1 .left span{}
+.content1 .left span{
+    font-size: 20px;
+}
 .content1 .left h2{
     font-family: var(--font1);
     font-size: var(--size3);
-    width: 50%;
+    width: 100%;
     text-transform: uppercase;
+    text-align: justify;
+    padding-top: 20px;
+    line-height: 55px;
 }
 .content1 .right{
-    width:65%;
+    width: 65%;
+    padding-left: 15%;
 }
-.content1 .right p{
-    line-height: 20px;
-    margin-bottom: 15px;
+.content1 .right h2{
+    line-height: 30px;
+    margin-bottom: 20px;
+    color: red;
+    font-size: 40px;
 }
 
+.content1 .right h3 {
+    margin-bottom: 8px;
+    font-size: 30px;
+}
 /* end content1 css */
 .content2{
     width: 100%;
@@ -351,6 +376,110 @@
 .footer div ul li p{
     padding-top: 3px;
     padding-bottom: 3px;
+}
+@media(max-width: 768px){
+    .text_banner .content .small{
+        font-size:14px;
+        margin-left: 55px;
+    }
+    .text_banner .content h1{
+        font-size: 25px;
+        margin-left: 55px;
+        line-height: 35px;
+        width:50%;
+    }
+    .header ._3col ._1col.right a {
+        font-size: 18px;
+        padding: 5px;
+
+    }
+    .header ._3col ._1col.left a {
+        font-size: 20px; 
+        padding: 10px;
+    }
+
+    .header ._3col ._1col.mid img {
+        width: 100%;
+        padding: 5px;
+    }
+
+
+    .content1 .left {
+    width: 40%;
+    margin-left: 0px;
+    }
+    .content1 .left span {
+    font-size: 12px;
+    }
+    .content1 .left h2 {
+    font-family: var(--font1);
+    font-size: 12px;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: justify;
+    padding-top: 5px;
+    line-height: 30px;
+    }
+
+    .content1 .right {
+    width: 60%;
+    padding-left: 14px;
+    }
+    .content1 .right h2 {
+    line-height: 18px;
+    margin-top: 7px;
+    margin-bottom: 9px;
+    color: red;
+    font-size: 13px;
+    }
+    .content1 .right h3 {
+    font-size: 13px;
+    text-align: inherit;
+    }
+    .header ._3col ._1col.left{
+        text-align: left;
+        width: 30%;
+        position: relative;
+        
+        line-height: 5px;
+    }
+    .header ._3col ._1col.left .vertical-menu{
+        position: absolute;
+        left:0px;
+        visibility: hidden; 
+        opacity:0;
+        transition: 0.6s;
+        width:100px;
+        background-color: rgb(158, 156, 156);
+    }
+    .header ._3col ._1col.left .vertical-menu ul li a{
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10px 10px;
+        color:black;
+        border-bottom:1px solid rgb(190,190,190);
+        text-decoration: none;
+        font-size: 10px;
+    }
+    .header ._3col ._1col.left .vertical-menu ul li {
+        list-style: none;
+    }
+    .header ._3col ._1col.left .vertical-menu ul li a:hover{
+        background-color: white;
+    }
+    
+    .header ._3col ._1col.left:hover .vertical-menu {
+        visibility: visible;
+        opacity: 1;
+        top:25px;
+        left:5px;
+    }
+    .header ._3col ._1col.left a{
+        font-size: 18px;
+        color:white;
+        display:inline-block;
+        padding: 5px;
 }
 
 /* end css footer */
