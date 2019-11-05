@@ -13,18 +13,18 @@
     <title>THComputer</title>
 </head>
 <body>
-    <div class="header">
+    <div class="header" id="header">
         <div class="_3col">
             <div class="_1col left">
+                <a href=""><div class="fa fa-bars"></div></a>
                 <div class="vertical-menu">
                     <ul>
-                        <li><a href="index.html">Laptop</a></li>
-                        <li><a href="dienthoai.html">Điện thoại</a></li>
-                        <li><a href="maytinhbang.html">Máy tính bảng</a></li>
-                        <li><a href="phukien.html">Phụ kiện</a></li>
+                        <li><a href="#header">Giới thiệu</a></li>
+                        <li><a href="#content2">Mua hàng</a></li>
+                        <li><a href="contact.html">Phản hồi ý kiến</a></li>
+                        <li><a href="#footer">Liên hệ</a></li>
                     </ul>
                 </div>
-                <i class="fa fa-search" aria-hidden="true"></i>
             </div>
             <div class="_1col mid">
                 <a href=""><img src="img/thlogo.png " alt=""></a>
@@ -44,7 +44,7 @@
         </div>
     </div>
     <!-- end banner-top -->
-    <div class="content1">
+    <div class="content1" id="content1">
         <div class="left">
             <span>Chúng tôi chuyên:</span>
             <h2>tư vấn và cung cấp các dòng sản phẩm chất lượng từ những thương hiệu hàng đầu</h2>
@@ -59,28 +59,35 @@
     </div>
     <!-- end textcontent -->
 
-    <div class="content2">
+    <div class="content2" id="content2">
         <div class="white">
             <div class="title">
               <hr>
               <ul id="myContainer">
-                <li><button class="btn active" onclick="filterSelection('all')">Tất cả</button></li>
-                <li><button class="btn" onclick="filterSelection('asus')">Asus</button></li>
-                <li><button class="btn" onclick="filterSelection('acer')">Acer</button></li>
-                <li><button class="btn" onclick="filterSelection('dell')">Dell</button></li>
-                <li><button class="btn" onclick="filterSelection('hp')">HP</button></li>
-                <li><button class="btn" onclick="filterSelection('lenovo')">Lenovo</button></li>
+                    <li><button class="btn active" onclick="filterSelection('all')">Tất cả</button></li>
+                    <li><button class="btn" onclick="filterSelection('asus')">Asus</button></li>
+                    <li><button class="btn" onclick="filterSelection('acer')">Acer</button></li>
+                    <li><button class="btn" onclick="filterSelection('dell')">Dell</button></li>
+                    <li><button class="btn" onclick="filterSelection('hp')">HP</button></li>
+                    <li><button class="btn" onclick="filterSelection('lenovo')">Lenovo</button></li>
+                   
               </ul>
+              <div class="box">
+                <div class="container-1">
+                    <span class="icon"><i class="fa fa-search"></i></span>
+                    <input type="search" id="search" placeholder="Search..." />
+                </div>
+              </div>
               <div class="sp">
                 <div class="_1sp asus" data-aos="fade-up">
                     <div class="box-img-text">
                         <a href="">
-                            <img src="img/SanPham/asus1.jfif" alt="">
-                            <span>Lenovo Ideapad 330-15IKB/Core I3 7020U/4GB/256GSSD</span>
+                            <img src="img/SanPham/asus3.jfif" alt="">
+                            <span>Asus TUF FX505DY-AL095T/R5-3550H</span>
                         </a>
                         <div class="price">
-                            <p class="real_price">9.090.000đ</p>
-                            <div class="discount"><del>9.999.999đ</del></div>
+                            <p class="real_price">17.990.000đ</p>
+                            <div class="discount"><del>19.990.000đ</del></div>
                         </div>
                         <div class="gray">
                             <img src="img/shopnow.png" alt="">
@@ -95,6 +102,22 @@
                             <span>Asus F570ZD-FY414T/R5-2500U</span>
                         </a>
                         <div class="price">
+                            <p class="real_price">8.090.000đ</p>
+                            <div class="discount"><del>8.990.000đ</del></div>
+                        </div>
+                        <div class="gray">
+                            <img src="img/shopnow.png" alt="">
+                            <div class="back_add"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="_1sp asus" data-aos="fade-up">
+                    <div class="box-img-text">
+                        <a href="">
+                            <img src="img/SanPham/asus1.jfif" alt="">
+                            <span>Asus F570ZD-FY414T/R5-2500U</span>
+                        </a>
+                        <div class="price">
                             <p class="real_price">15.090.000đ</p>
                             <div class="discount"><del>15.990.000đ</del></div>
                         </div>
@@ -104,23 +127,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="_1sp dell" data-aos="fade-up">
-                    <div class="box-img-text">
-                        <a href="">
-                            <img src="img/SanPham/dell1.jfif" alt="">
-                            <span>Dell Inspiron G7 N7591/Core i5-9300H/N5I5591W</span>
-                        </a>
-                        <div class="price">
-                            <p class="real_price">26.790.000đ</p>
-                            <div class="discount"><del>27.900.000đ</del></div>
-                        </div>
-                        <div class="gray">
-                            <img src="img/shopnow.png" alt="">
-                            <div class="back_add"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="_1sp dell" data-aos="fade-up">
+                <div class="_1sp acer" data-aos="fade-up">
                     <div class="box-img-text">
                         <a href="">
                             <img src="img/SanPham/acer1.jfif" alt="">
@@ -139,7 +146,71 @@
                 <div class="_1sp acer" data-aos="fade-up">
                     <div class="box-img-text">
                         <a href="">
-                            <img src="img/SanPham/hp2.jfif" alt="">
+                            <img src="img/SanPham/acer2.jfif" alt="">
+                            <span>Acer Swift SF314-56-596E/Core i5-8265U/NX.H4CSV.006</span>
+                        </a>
+                        <div class="price">
+                            <p class="real_price">16.990.000đ</p>
+                            <div class="discount"><del>17.990.000đ</del></div>
+                        </div>
+                        <div class="gray">
+                            <img src="img/shopnow.png" alt="">
+                            <div class="back_add"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="_1sp acer" data-aos="fade-up">
+                    <div class="box-img-text">
+                        <a href="">
+                            <img src="img/SanPham/dell1.jfif" alt="">
+                            <span>Acer Inspiron G7 N7591/Core i5-9300H/N5I5591W</span>
+                        </a>
+                        <div class="price">
+                            <p class="real_price">26.790.000đ</p>
+                            <div class="discount"><del>27.900.000đ</del></div>
+                        </div>
+                        <div class="gray">
+                            <img src="img/shopnow.png" alt="">
+                            <div class="back_add"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="_1sp dell" data-aos="fade-up">
+                    <div class="box-img-text">
+                        <a href="">
+                            <img src="img/SanPham/dell2.jfif" alt="">
+                            <span>Dell G3 15 3590 i5 9300H/8Gb/512Gb/GTX1650 4Gb/15.6FHD</span>
+                        </a>
+                        <div class="price">
+                            <p class="real_price">25.090.000đ</p>
+                            <div class="discount"><del>25.900.000đ</del></div>
+                        </div>
+                        <div class="gray">
+                            <img src="img/shopnow.png" alt="">
+                            <div class="back_add"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="_1sp dell" data-aos="fade-up">
+                    <div class="box-img-text">
+                        <a href="">
+                            <img src="img/SanPham/dell3.jfif" alt="">
+                            <span>Dell Inspiron N3476B/Core i5-8250U/4Gb/1Tb/AMD 520 Radeon 2Gb/DVDRW/Win10</span>
+                        </a>
+                        <div class="price">
+                            <p class="real_price">15.990.000đ</p>
+                            <div class="discount"><del>16.990.000đ</del></div>
+                        </div>
+                        <div class="gray">
+                            <img src="img/shopnow.png" alt="">
+                            <div class="back_add"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="_1sp hp" data-aos="fade-up">
+                    <div class="box-img-text">
+                        <a href="">
+                            <img src="img/SanPham/hp1.jfif" alt="">
                             <span>HP 15-da0037TX/i3 7020U_Vàng</span>
                         </a>
                         <div class="price">
@@ -152,15 +223,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="_1sp acer" data-aos="fade-up">
+                <div class="_1sp hp" data-aos="fade-up">
                     <div class="box-img-text">
                         <a href="">
-                            <img src="img/SanPham/hp1.jpg" alt="">
+                            <img src="img/SanPham/hp2.jfif" alt="">
                             <span>HP Pavilion 14-ce1016TU/Core i5-8265U</span>
                         </a>
                         <div class="price">
-                            <p class="real_price">9.090.000đ</p>
-                            <div class="discount"><del>9.999.999đ</del></div>
+                            <p class="real_price">14.390.000đ</p>
+                            <div class="discount"><del>14.990.000đ</del></div>
                         </div>
                         <div class="gray">
                             <img src="img/shopnow.png" alt="">
@@ -168,10 +239,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="_1sp hp" data-aos="fade-up">
+                <div class="_1sp lenovo" data-aos="fade-up">
                     <div class="box-img-text">
                         <a href="">
-                            <img src="img/SanPham/hp1.jpg" alt="">
+                            <img src="img/SanPham/lenovo1.jfif" alt="">
                             <span>Lenovo Ideapad 330-15IKB/Core I3 7020U/4GB/256GSSD</span>
                         </a>
                         <div class="price">
@@ -184,15 +255,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="_1sp hp" data-aos="fade-up">
+				<div class="_1sp lenovo" data-aos="fade-up">
                     <div class="box-img-text">
                         <a href="">
-                            <img src="img/SanPham/hp1.jpg" alt="">
-                            <span>Lenovo Ideapad 330-15IKB/Core I3 7020U/4GB/256GSSD</span>
+                            <img src="img/SanPham/lenovo2.jfif" alt="">
+                            <span>IdeaPad 320- 14ISK/Core i3-6006U/Win 10</span>
                         </a>
                         <div class="price">
-                            <p class="real_price">9.090.000đ</p>
-                            <div class="discount"><del>9.999.999đ</del></div>
+                            <p class="real_price">7.990.000đ</p>
+                            <div class="discount"><del>8.990.000đ</del></div>
                         </div>
                         <div class="gray">
                             <img src="img/shopnow.png" alt="">
@@ -200,6 +271,9 @@
                         </div>
                     </div>
                 </div>
+                
+				
+				
               </div>
             </div>
             
@@ -207,7 +281,7 @@
         
     
     </div>
-    <div class="footer">
+    <div class="footer" id="footer">
         <footer>
             <div>
                 <ul>
@@ -216,7 +290,7 @@
                         <hr>
                         <p><a href="">Chính sách bảo hành</a></p>
                         <p><a href="">Mua hàng trả góp</a></p>
-                        <a href="">Chính sách đổi trả</a></br>
+                       <p> <a href="">Chính sách đổi trả</a></p>
                     </li>
                     <li>
                         <h1>LIÊN HỆ NHANH</h1>
